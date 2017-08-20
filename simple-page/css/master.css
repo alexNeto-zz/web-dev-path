@@ -59,14 +59,47 @@ li a:hover{
   left: 0;
   background: #F0F0F0;
 }
-.big-container{
-  background-color: chartreuse;
+.big-container, .bottomarticle{
+  background-image: url("../img/big-image.jpg");
+  background-position:center;
+  background-size:cover;
+  background-repeat:no-repeat;
+  background-attachment:fixed;
   position: relative;
-
+  opacity:0.70;
+}
+.big-container{
+  min-height: 500px;
+  color: black;
+}
+.big-text{
+  text-align: center;
+  padding-top: 15%;
+  font-size: 3em;
+  font-weight: 600;
 }
 .thumbnail{
-  background-color: crimson;
+    background-color: cadetblue;
+    font-weight: 100;
+    color: #797478;
+    float: left;
+    width: 30%;
+    margin: 2% 1% 80px 2%;
+    height: 300px;
 }
 .bottomarticle{
-  background-color: coral;
+    background-color: coral;
+    position: absolute;
+    top: 830px;
+    margin: 2% 1% 0 2%;
+    width: 96%;
+    height: 200px;
+}
+footer{
+  position: absolute;
+  float: none;
+  bottom: -100%;
+  right: 0;
+  left: 0;
+  background-color: violet;
 }
