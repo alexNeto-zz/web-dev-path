@@ -1,9 +1,7 @@
-include(pieceFlags.js);
-
 function canvasInit(id) {
-  canvas = O(id);
+  canvas = osc.o(id);
   context = canvas.getContext("2d");
-  S(canvas).border = "1px solid black";
+  osc.s(canvas).border = "1px solid black";
 }
 
 function japan(id) {
@@ -18,38 +16,38 @@ function japan(id) {
 
 function poland(id) {
   canvasInit(id);
-  upperHalf("white");
-  lowerHalf("#ff355e");
+  pieceFlags.upperHalf('white');
+  pieceFlags.lowerHalf("#ff355e");
 }
 
 function germany(id) {
   canvasInit(id);
-  upperThird("#000000");
-  middleThird("#ff0000");
-  lowerThird("#ffcc00");
+  pieceFlags.upperThird("#000000");
+  pieceFlags.middleThird("#ff0000");
+  pieceFlags.lowerThird("#ffcc00");
 }
 
 function rusland(id) {
   canvasInit(id);
-  upperThird("white");
-  middleThird("blue");
-  lowerThird("red");
+  pieceFlags.upperThird("white");
+  pieceFlags.middleThird("blue");
+  pieceFlags.lowerThird("red");
 }
 
 function ukraine(id) {
   canvasInit(id);
-  upperHalf("blue");
-  lowerHalf("#ffcc00");
+  pieceFlags.upperHalf("blue");
+  pieceFlags.lowerHalf("#ffcc00");
 }
 
 function italy(id) {
   canvasInit(id);
-  right("green");
-  center("white");
-  left("red");
+  pieceFlags.right("green");
+  pieceFlags.center("white");
+  pieceFlags.left("red");
 }
 
 function toImg(id) {
-  S(id).border = "1px solid black";
-  O(id).src = canvas.toDataURL();
+  osc.s(id).border = "1px solid black";
+  osc.o(id).src = canvas.toDataURL();
 }
