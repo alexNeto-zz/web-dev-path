@@ -1,33 +1,33 @@
 pieceFlags = {
-  upperHalf: function(color) {
+  upperHalf(color) {
     context.fillStyle = color;
     context.fillRect(0, 0, 360, 120);
   },
-  lowerHalf: function(color) {
+  lowerHalf(color) {
     context.fillStyle = color;
     context.fillRect(0, 120, 360, 120);
   },
-  upperThird: function(color) {
+  upperThird(color) {
     context.fillStyle = color;
     context.fillRect(0, 0, 360, 80);
   },
-  middleThird: function(color) {
+  middleThird(color) {
     context.fillStyle = color;
     context.fillRect(0, 80, 360, 80);
   },
-  lowerThird: function(color) {
+  lowerThird(color) {
     context.fillStyle = color;
     context.fillRect(0, 160, 360, 80);
   },
-  right: function(color) {
+  right(color) {
     context.fillStyle = color;
     context.fillRect(0, 0, 120, 240);
   },
-  center: function(color) {
+  center(color) {
     context.fillStyle = color;
     context.fillRect(120, 0, 120, 240);
   },
-  left: function(color) {
+  left(color) {
     context.fillStyle = color;
     context.fillRect(240, 0, 120, 240);
   }

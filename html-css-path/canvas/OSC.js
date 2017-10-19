@@ -3,13 +3,13 @@ function o(i) {
 }
 
 osc = {
-  o: function(i) {
+  o(i) {
     return typeof i == "object" ? i : document.getElementById(i);
   },
-  s: function(i) {
+  s(i) {
     return o(i).style;
   },
-  c: function(i) {
+  c(i) {
     return document.getElementsByClassName(i);
   }
 };

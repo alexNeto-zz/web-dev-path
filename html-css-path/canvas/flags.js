@@ -1,3 +1,12 @@
+/**
+ * This script are used to make flag in canvas
+ * 
+ * @summary   This script are used to make flag in canvas.
+ *
+ * @requires OSC.js
+ * @requires pieceFlags.j
+ */
+
 function canvasInit(id) {
   canvas = osc.o(id);
   context = canvas.getContext("2d");
@@ -16,7 +25,7 @@ function japan(id) {
 
 function poland(id) {
   canvasInit(id);
-  pieceFlags.upperHalf('white');
+  pieceFlags.upperHalf("white");
   pieceFlags.lowerHalf("#ff355e");
 }
 
